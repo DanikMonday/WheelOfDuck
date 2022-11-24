@@ -5,13 +5,38 @@
     
 } 
 
+:root {
+    /* Font */
+    --tittleFont: 'Josefin Sans', sans-serif;
+    --buttonFont: 'New Rocker', cursive;
+    --textFont: 'Inika', serif;
+
+    /* Color Palette */
+    --borderColor: #FFB801;
+    --gray: #D9D9D9;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(../images/fondo_player.jpg);
+    background-image: url(../img/fondo_player.jpg);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    color: var(--white);
+    font-family: var(--tittleFont);
+    font-size: 6rem;
+    text-align: center;
 }
 
 .list_players{
