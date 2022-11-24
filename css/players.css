@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/fondo_player.jpg);
+}
+
+.list_players{
+    width: 606px;
+    height: 347px;
+    background-color: rgba(217, 217, 217, 0.72);
+    border-radius: 20px;
+    border: 5px white solid ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_players h2{
+    font-size: 48px;
+    font-family: 'Inika', serif;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+.entrada{
+    background-color: rgba(217, 217, 217, 0.72);
+    width: 606px;
+    height: 103px;
+    border-radius: 20px;
+    border: 5px white solid ;
+    margin-bottom: 50px;
+    font-size: 64px;
+    font-family: 'Inika', serif;
+    text-align: center;
+}
+
+.display{
+    width: 554px;
+    height: 238px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.lista{
+    list-style: none;
+    font-size: 25px;
+    font-family: 'Inika', serif;
+
+}
