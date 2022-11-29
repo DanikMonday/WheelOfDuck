@@ -7,6 +7,7 @@
 /*El segundo contenedor es para aliniar el carrusel de forma lineal horizontal*/
 /*El carrusel de movera a la izquierda, su movimiento no para */
 .carrusel-items{
+    margin-top: 150px;
     display: inline-flex;
     -moz-animation: slider 5s infinite linear;
     -webkit-animation: slider 5s infinite linear;
@@ -76,4 +77,12 @@
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+}
+
+/*se coloca propiedades y valores a la posicion del patito*/
+.patito{
+    width:60px;
+    position: absolute;
+    margin-top:-7px;
+    margin-left: -10px;
 }
