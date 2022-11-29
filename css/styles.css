@@ -87,21 +87,35 @@
     margin-left: -10px;
 }
 
-
-
-
+/*Elemento que referencia propiedad y valores al Titulo general de la vista*/
 .titulo {
     font-family: var(--tittleFont);
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    max-width: 90%;
     padding: 20px;
     margin-top: 10px;
 }
 
+/*Elemento que llama selector de diseño h1 donde  se coloca la tipografia,tamaño y el texto debe estar centrado*/
+.titulo h1{
+    font-family: var(--tittleFont);
+    font-size: 4rem;
+    text-align: center;
+}
+
+/*se coloca el tamaño de icono del pato*/
 .titulo img{
-    width: 90px;
-    height: 100px;
+    width: 7rem;
+    height: 10rem;
+}
+
+
+@media (min-width: 768px) { 
+    .titulo {
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
