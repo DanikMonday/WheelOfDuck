@@ -68,3 +68,12 @@
     margin-top:10px;
     margin-left: 10px;
 }
+
+/*se coloca movimiento al carrusel que recorra al lado izquierdo */
+@keyframes slider {
+    to {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
