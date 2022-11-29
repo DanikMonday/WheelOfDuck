@@ -23,5 +23,16 @@
     border-radius: 50%;
     margin-left:50px;
     position: relative;
-
 }
+
+/*se coloca el segundo pseudoclase de tamalo del circulo de un tamaño 80px con una posicion absoluta*/
+.circulo2{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
