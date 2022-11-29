@@ -58,3 +58,13 @@
     margin-left: 10px;
 }
 
+/*se coloca pseucodigo para colocar el ultimo circulo con un tamaño de 20px y una posicion absoluta*/
+.circulo5{
+    width: 20px;
+    height: 20px;
+    background-color: #ff0404c5;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
