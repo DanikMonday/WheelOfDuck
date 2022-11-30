@@ -3,7 +3,6 @@ const list = document. querySelector('.lista');
 const start = document.querySelector('#start')
 const arrayNombres = [];
 
-
 form.addEventListener('submit', funcion )
 function funcion (event){
     event.preventDefault()
@@ -18,11 +17,15 @@ function funcion (event){
 }
 
 start.addEventListener('click', (e)=>{
-    e.preventDefault()
+    // e.preventDefault()
     arrayNombres.sort(()=>Math.random()-0.5)
     console.log(arrayNombres)
     // const aleat = Math.floor(Math.random()*arrayNombres.length)
     // console.log(arrayNombres[aleat])
 })
+
+
+
+
 
 

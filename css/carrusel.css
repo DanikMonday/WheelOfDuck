@@ -1,4 +1,8 @@
 /*Se coloca propiedades y valores al contenedor global*/
+body{
+    background-color: gray;
+}
+
 .carrusel{
     height: 100%;
     width: 100%;
