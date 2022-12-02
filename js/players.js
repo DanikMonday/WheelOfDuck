@@ -3,7 +3,8 @@ const list = document. querySelector('.lista');
 const start = document.querySelector('#start')
 const arrayNombres = [];
 
-form.addEventListener('submit', funcion )
+
+form?.addEventListener('submit', funcion )
 function funcion (event){
     event.preventDefault()
     const inputValue = event.target.player_name.value
@@ -16,13 +17,19 @@ function funcion (event){
     console.log(arrayNombres)
 }
 
-start.addEventListener('click', (e)=>{
+start?.addEventListener('click', (e)=>{
     // e.preventDefault()
     arrayNombres.sort(()=>Math.random()-0.5)
     console.log(arrayNombres)
     // const aleat = Math.floor(Math.random()*arrayNombres.length)
     // console.log(arrayNombres[aleat])
+    localStorage.setItem('arrayNom', JSON.stringify (arrayNombres))
 })
+
+
+
+
+
 
 
 
