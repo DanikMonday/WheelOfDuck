@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+:root {
+    /* Font */
+    --tittleFont: 'Josefin Sans', sans-serif;
+    --buttonFont: 'New Rocker', cursive;
+    --textFont: 'Inika', serif;
+
+    /* Color Palette */
+    --borderColor: #FFB801;
+    --gray: #D9D9D9;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../prueba/iimagenes/fondo_player.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    justify-content: center;
+
+}
+
+.modal-ext-gameover{
+    width: 300px;
+    height: 390px;
+    background-color: rgba(217, 217, 217, 0.72);
+    border-radius: 20px;
+    border: 5px white solid ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) { 
+    .modal-ext-gameover {
+        width: 600px;
+        height: 685px;
+       
+    }
+}
+
+.modal-int-gameover{
+    width: 253px;
+    height: 350px;
+    background-color: rgba(217, 217, 217, 0.72);
+    border-radius: 20px;
+    border: 5px #FFB801 solid ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) { 
+    .modal-int-gameover {
+        width: 528px;
+        height: 642px;
+    }
+}
+
+.modal-int-gameover img{
+    width: 350px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+@media (min-width:1024px ) { 
+    .modal-int-gameover img{
+        width:600px;
+        position: relative;
+    }
+}
+
+.modal-text{
+    text-align: center;
+    background-color: #FFB801;
+    margin-bottom: 20px;
+    font-family:var(--buttonFont);
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    background-color: rgba(11, 10, 10, 0.4);
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    margin-top: 280px;
+}
+
+@media (min-width: 1024px ) { 
+    .modal-text{
+        font-size: 60px;
+        width: 402px;
+        height: 92px;
+        position: relative;
+        margin-top: 0px;
+    }
+}
