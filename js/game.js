@@ -5,10 +5,7 @@ const puntos = document.querySelector('#contador')
 let score = 0 
 
 const cursor = document.querySelector(".cursor");
-
-
 const patoeliminado = document.querySelector('#patos')
-
 function obtenerArray() {
     arrayN = JSON.parse(localStorage.getItem('arrayNom'))
     // console.log(arrayN.length)
@@ -30,7 +27,6 @@ for (let x = 0; x < (dianas.length); x++) {
         console.log(eliminado)
         container.removeChild(dianas[0])
         puntos.innerHTML = 'Puntos: ' + String(score)
-
         patoeliminado.innerHTML = 'Pato Eliminado: ' + String(eliminado);
     })
 }
@@ -44,7 +40,6 @@ function movimientoCursor() {
 }
 
 movimientoCursor();
- 
 
 if (arrayN==0) {
     function emerge() {
