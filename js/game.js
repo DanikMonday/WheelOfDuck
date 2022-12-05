@@ -24,4 +24,5 @@ for (let x = 0; x < (dianas.length); x++) {
     })
 }
 
+ document.getElementById("patos").innerHTML = eliminado;
 
