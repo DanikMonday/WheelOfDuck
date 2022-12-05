@@ -40,3 +40,8 @@ function movimientoCursor() {
 
 movimientoCursor();
 
+if (arrayN==0) {
+    function emerge() {
+        
+    }
+}
