@@ -12,13 +12,13 @@ close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
 
-const personas = [
-  { nombre: 'A', apellido:'1'},
-  { nombre: 'B', apellido:'2'},
-  { nombre: 'C', apellido:'3'},
-  { nombre: 'D', apellido:'4'},
-  { nombre: 'E', apellido:'5'}
-];
+// const personas = [
+//   { nombre: 'A', apellido:'1'},
+//   { nombre: 'B', apellido:'2'},
+//   { nombre: 'C', apellido:'3'},
+//   { nombre: 'D', apellido:'4'},
+//   { nombre: 'E', apellido:'5'}
+// ];
 
-personas.splice(1,1);
-console.log(personas);
+// personas.splice(1,1);
+// console.log(personas);

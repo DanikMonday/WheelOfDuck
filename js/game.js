@@ -21,8 +21,10 @@ for (let x = 0; x < (dianas.length); x++) {
         console.log(arrayN)
         // console.log(eliminado)
         container.removeChild(dianas[x])
+        document.getElementById("patos").innerHTML = eliminado;
     })
+    
 }
 
- document.getElementById("patos").innerHTML = eliminado;
+ 
 
