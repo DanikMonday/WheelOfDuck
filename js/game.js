@@ -13,7 +13,6 @@ function obtenerArray() {
 
 obtenerArray()
 
-
 for (let x = 0; x < (arrayN.length-1); x++) {
     container.appendChild(circulo.cloneNode(true))
 }
@@ -32,10 +31,10 @@ for (let x = 0; x < (dianas.length); x++) {
 }
 
 function movimientoCursor() {
-  window.addEventListener("mousemove", (e) => {
+    window.addEventListener("mousemove", (e) => {
     cursor.style.top = e.pageY + "px";
     cursor.style.left = e.pageX + "px";
-  });
+    });
 
 }
 
