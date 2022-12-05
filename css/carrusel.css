@@ -151,3 +151,22 @@ img::selection {
     bottom: 0;
     right: 800px;
   }
+
+/*Propiedad y valor global del contenedor de la letra y tipografia */
+.contador{
+    font-family: var(--tittleFont);
+    font-size: 30px;
+}  
+
+/*propiedad y valor a los puntos*/
+.puntos{
+    display: grid;
+    margin-top:260px;
+    margin-left:85%;
+    margin-bottom:60px;
+}
+
+/*propiedad y valor al patito negro*/
+.patito-Negro{
+    width: 40px;
+}
