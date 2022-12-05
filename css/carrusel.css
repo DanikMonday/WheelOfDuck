@@ -1,0 +1,125 @@
+/*Se coloca propiedades y valores al contenedor global*/
+body{
+    background-color: gray;
+}
+
+.carrusel{
+    height: 100%;
+    width: 100%;
+}
+
+/*El segundo contenedor es para aliniar el carrusel de forma lineal horizontal*/
+/*El carrusel de movera a la izquierda, su movimiento no para */
+.carrusel-items{
+    margin-top: 30px;
+    display: inline-flex;
+    -moz-animation: slider 5s infinite linear;
+    -webkit-animation: slider 5s infinite linear;
+    animation: slider 5s infinite linear;
+    height: 100%;
+    width: auto;
+}
+
+/*El primer circulo contiene un tamaño de 100px con un color rojo con una posicion relativa*/
+.circulo1{
+    width: 100px;
+    height: 100px;
+    background: #ff0404c5;
+    border-radius: 50%;
+    margin-left:50px;
+    position: relative;
+}
+
+/*se coloca el segundo pseudoclase de tamalo del circulo de un tamaño 80px con una posicion absoluta*/
+.circulo2{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+/*se coloca el tercer pseudocodigo del tercer circulo con un tamaño de 60px con una posicion absoluta */
+.circulo3{
+    width: 60px;
+    height: 60px;
+    background-color: #ff0404c5;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+/*se coloca pseudocodigo para colocar el cuarto circulo con un tamaño de 40px y una posicion absoluta*/
+.circulo4{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+/*se coloca pseucodigo para colocar el ultimo circulo con un tamaño de 20px y una posicion absoluta*/
+.circulo5{
+    width: 20px;
+    height: 20px;
+    background-color: #ff0404c5;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+/*se coloca movimiento al carrusel que recorra al lado izquierdo */
+@keyframes slider {
+    to {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+/*se coloca propiedades y valores a la posicion del patito*/
+.patito{
+    width:60px;
+    position: absolute;
+    margin-top:-7px;
+    margin-left: -10px;
+}
+
+/*Elemento que referencia propiedad y valores al Titulo general de la vista*/
+.titulo {
+    font-family: var(--tittleFont);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/*Elemento que llama selector de diseño h1 donde  se coloca la tipografia,tamaño y el texto debe estar centrado*/
+.titulo h1{
+    font-family: var(--tittleFont);
+    font-size: 4rem;
+    text-align: center;
+}
+
+/*se coloca el tamaño de icono del pato*/
+.titulo img{
+    width: 7rem;
+    height: 10rem;
+}
+
+
+@media (min-width: 768px) { 
+    .titulo {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
