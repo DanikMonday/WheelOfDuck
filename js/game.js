@@ -2,6 +2,9 @@ const container = document.querySelector('.carrusel-items')
 const circulo = document.querySelector('.circulo1')
 const dianas = document.getElementsByClassName('circulo1')
 
+
+const patoeliminado = document.querySelector('patos')
+
 function obtenerArray() {
     arrayN = JSON.parse(localStorage.getItem('arrayNom'))
     console.log(arrayN.length)
@@ -21,9 +24,8 @@ for (let x = 0; x < (dianas.length); x++) {
         console.log(arrayN)
         // console.log(eliminado)
         container.removeChild(dianas[x])
-        document.getElementById("patos").innerHTML = eliminado;
+        patoeliminado.innerHTML = 'Pato Eliminado: ' + String(pato);
     })
-    
 }
 
  
