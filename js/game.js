@@ -25,7 +25,7 @@ for (let x = 0; x < (dianas.length); x++) {
         // console.log(eliminado)
         container.removeChild(dianas[x])
 
-        patoeliminado.innerHTML = 'Pato Eliminado: ' + String(arrayN);
+        patoeliminado.innerHTML = 'Pato Eliminado: ' + String(eliminado);
     })
 }
 
