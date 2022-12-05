@@ -1,12 +1,13 @@
 button {
-    background-color: #47a386;
+    background-color: #ffee00;
     border: 0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-family: var(--buttonFont);
     font-size: 14px;
     padding: 10px 25px;
+    box-shadow: 0 10px 5px rgba(0, 0, 2, 2);
   }
   
   .modal-container {
@@ -30,21 +31,35 @@ button {
   }
   
   .modal {
-    background-color: #fff;
+    
+    transition: opacity 0.8s ease;
     width: 600px;
     max-width: 100%;
     padding: 30px 50px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 10px rgba(0, 0, 2, 5);
+    text-align: center;
+    
+  }
+  .modal-black {
+    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.52);
+    width: 300px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 5, 2);
     text-align: center;
   }
   
   .modal h1 {
     margin: 0;
+    color: white;
   }
   
   .modal p {
     font-family: var(--buttonFont);
     opacity: 0.7;
-    font-size: 14px;
+    font-size: 30px;
+    color: white;
   }
