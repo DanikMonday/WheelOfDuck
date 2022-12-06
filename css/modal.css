@@ -63,3 +63,42 @@ button {
     font-size: 30px;
     color: white;
   }
+
+  @media (max-width: 375px){
+    .modal-container {
+      
+      height: 100vh;
+      width: 110vw;
+      
+    }
+    .modal {
+      width: 300px;
+      max-width: 100%;
+      padding: 30px 50px;
+    }
+    .modal-black {
+      width: 300px;
+      max-width: 100%;
+      padding: 30px 50px;
+      
+    }
+    .modal p {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 768px){
+    .modal {
+      width: 300px;
+      max-width: 100%;
+      padding: 30px 30px;
+    }
+    .modal-black {
+      width: 150px;
+      max-width: 100%;
+      padding: 30px 50px;
+      
+    }
+    .modal p {
+      font-size: 15px;
+    }
+  }

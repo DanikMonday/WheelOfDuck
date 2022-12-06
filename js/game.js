@@ -12,12 +12,20 @@ let score = 0
 const cursor = document.querySelector(".cursor");
 const patoeliminado = document.querySelector('#patos')
 
+/** esta función llama al array almacenado en local 
+ * storage y convierte sus elementos de un archivo JSON
+ *   al formato en el que se encuentra el elemento originalmente.
+ */
+
 function obtenerArray() {
     arrayN = JSON.parse(localStorage.getItem('arrayNom'))
     // console.log(arrayN.length)
 }
 
 obtenerArray()
+
+/**el siguiente ciclo for clona las dianas con los patos el número
+ *  de veces que le indique la extensión del array de nombres que tenemos.  */
 
 for (let x = 0; x < (arrayN.length-1); x++) {
     container.appendChild(circulo.cloneNode(true))
