@@ -23,7 +23,9 @@ for (let x = 0; x < (arrayN.length-1); x++) {
     container.appendChild(circulo.cloneNode(true))
 }
 
-
+let sound1 = new Audio ('play3.mp3');
+let sound2 = new Audio ('play2.mp3');
+let sound3 = new Audio ('gameover.mp3');
 
 for (let x = 0; x < (dianas.length); x++) {
     dianas[x].addEventListener('click',(e)=>{
@@ -36,9 +38,11 @@ for (let x = 0; x < (dianas.length); x++) {
         container.removeChild(dianas[0])
         puntos.innerHTML = 'Puntos: ' + String(score)
         patoeliminado.innerHTML = 'Pato Eliminado: ' + String(eliminado);
+        sound2.play();
         if (arrayN.length==0) {
         window.open('./final.html')
-            
+        sound3.play();
+        sound1.pause();
         }
     })
 }
@@ -56,3 +60,12 @@ function movimientoCursor() {
 }
 
 movimientoCursor();
+
+
+
+playOn.addEventListener('click',()=> {
+    sound1.play();
+});
+playOff.addEventListener('click',()=> {
+    sound1.pause();
+});

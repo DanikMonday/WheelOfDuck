@@ -63,3 +63,31 @@ button {
     font-size: 30px;
     color: white;
   }
+
+
+  /* Propiedades de los botones de reproduccion de musica */
+  #playOn{
+    background-color: #40e334;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    font-family: var(--buttonFont);
+    font-size: 14px;
+    padding: 10px 25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 2, 2);
+    font-weight: 700;
+  }
+
+  #playOff{
+    background-color: #e33434;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    font-family: var(--buttonFont);
+    font-size: 14px;
+    padding: 10px 25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 2, 2);
+    font-weight: 700;
+  }
