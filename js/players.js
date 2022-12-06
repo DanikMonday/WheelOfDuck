@@ -39,18 +39,3 @@ start?.addEventListener('click', (e)=>{
     // console.log(arrayNombres[aleat])
     localStorage.setItem('arrayNom', JSON.stringify (arrayNombres))
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

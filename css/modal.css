@@ -64,41 +64,30 @@ button {
     color: white;
   }
 
-  @media (max-width: 375px){
-    .modal-container {
-      
-      height: 100vh;
-      width: 110vw;
-      
-    }
-    .modal {
-      width: 300px;
-      max-width: 100%;
-      padding: 30px 50px;
-    }
-    .modal-black {
-      width: 300px;
-      max-width: 100%;
-      padding: 30px 50px;
-      
-    }
-    .modal p {
-      font-size: 15px;
-    }
+
+  /* Propiedades de los botones de reproduccion de musica */
+  #playOn{
+    background-color: #40e334;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    font-family: var(--buttonFont);
+    font-size: 14px;
+    padding: 10px 25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 2, 2);
+    font-weight: 700;
   }
-  @media (max-width: 768px){
-    .modal {
-      width: 300px;
-      max-width: 100%;
-      padding: 30px 30px;
-    }
-    .modal-black {
-      width: 150px;
-      max-width: 100%;
-      padding: 30px 50px;
-      
-    }
-    .modal p {
-      font-size: 15px;
-    }
+
+  #playOff{
+    background-color: #e33434;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    font-family: var(--buttonFont);
+    font-size: 14px;
+    padding: 10px 25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 2, 2);
+    font-weight: 700;
   }
