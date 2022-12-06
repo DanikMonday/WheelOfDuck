@@ -28,7 +28,7 @@
     height: 100px;
     background: #ff0404c5;
     border-radius: 50%;
-    margin-left:50px;
+    margin-left:20px;
     position: relative;
 }
 
@@ -126,6 +126,80 @@
     }
 }
 
+
+/*Media query de dispositivo celular */
+
+@media screen and (min-width:375px) and (min-height:812px){
+    .game {
+        background-image: url(../img/fondoJuego.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 375px;
+        height: 812px;
+    }
+    
+
+    .titulo h1{
+        font-family: var(--tittleFont);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .titulo img{
+        width: 3rem;
+        height: 5rem;  
+    }
+
+    .carrusel-items{
+        height: 1rem;
+        width: 0.rem;
+        gap:0rem;
+    }
+
+    .circulo1{
+        width: 80px;
+        height: 80px;
+        margin-left:10px;
+        position: relative;
+    }
+    .circulo2{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circulo3{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .circulo4{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .circulo5{
+        width: 10px;
+        height: 10px;
+    }
+
+    .patito{
+        width:25px;
+        margin-top:-15px;
+        margin-left: -20px;
+    }
+
+
+    .puntos{
+        display: grid;
+        margin-top:260px;
+        margin-left:97%;
+        margin-bottom:60px;
+    }
+    
+}
+
+
+
 /* Estilos funcionalidad mira y cambio de imagen */
 .duck-game {
     z-index: 2;
@@ -152,6 +226,7 @@ img::selection {
     right: 800px;
   }
 
+
 /*Propiedad y valor global del contenedor de la letra y tipografia */
 .contador{
     font-family: var(--tittleFont);
@@ -162,7 +237,7 @@ img::selection {
 .puntos{
     display: grid;
     margin-top:260px;
-    margin-left:85%;
+    margin-left:99%;
     margin-bottom:60px;
 }
 
@@ -170,3 +245,15 @@ img::selection {
 .patito-Negro{
     width: 40px;
 }
+
+/*Media query de dispositivo de tablet*/
+
+@media screen and (min-width:670px){
+    .puntos{
+        display: grid;
+        margin-top:260px;
+        margin-left:75%;
+        margin-bottom:60px;
+    }
+}
+
