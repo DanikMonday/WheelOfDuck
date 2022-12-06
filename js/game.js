@@ -31,7 +31,13 @@ for (let x = 0; x < (arrayN.length-1); x++) {
     container.appendChild(circulo.cloneNode(true))
 }
 
-
+/**el siguiente ciclo for se encarga de recorrer cada uno de los
+ *  elementos clonados para lograr que el addeventlistener tenga 
+ * efecto en cada uno de ellos. Con este evento lo que logramos 
+ * es eliminar un nombre del array cuando se dispara a un blanco 
+ * y eliminar uno de los objetos clonados. Al final tenemos un 
+ * condicional if el cual nos lleva a la página de game over cuando 
+ * el arrayN.lenght es igual a cero.   */
 
 for (let x = 0; x < (dianas.length); x++) {
     dianas[x].addEventListener('click',(e)=>{
