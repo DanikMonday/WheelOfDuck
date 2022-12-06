@@ -1,3 +1,5 @@
+// Se vinculan las variables a elementos del html mediante clases y/o id
+
 const container = document.querySelector('.carrusel-items')
 const circulo = document.querySelector('.circulo1')
 const dianas = document.getElementsByClassName('circulo1')
@@ -31,6 +33,7 @@ for (let x = 0; x < (arrayN.length-1); x++) {
     container.appendChild(circulo.cloneNode(true))
 }
 
+// Se declaran nuevas variables que corresponden a archivos de audio y su respectivo nombre
 let sound1 = new Audio ('play3.mp3');
 let sound2 = new Audio ('play2.mp3');
 let sound3 = new Audio ('gameover.mp3');
@@ -54,9 +57,12 @@ for (let x = 0; x < (dianas.length); x++) {
         container.removeChild(dianas[0])
         puntos.innerHTML = 'Puntos: ' + String(score)
         patoeliminado.innerHTML = 'Pato Eliminado: ' + String(eliminado);
+        // Cuando se detecte el click sobre las dianas se reproduce el sound3 
         sound2.play();
         if (arrayN.length==0) {
         window.open('./final.html')
+        // Cuando el arreglo arrayN no tenga mas elementos se pausa el sound1
+        // y se reproduce el sonido sound3
         sound3.play();
         sound1.pause();
         }
@@ -67,6 +73,8 @@ close.addEventListener('click', () => {
     modal_container.classList.remove('show');
 });
 
+// Se agrega el metodo addEventListener para detectar el movimiento del mouse y situar sus 
+// coordenadas en la pantalla
 function movimientoCursor() {
     window.addEventListener("mousemove", (e) => {
     cursor.style.top = e.pageY + "px";
@@ -77,7 +85,8 @@ function movimientoCursor() {
 
 movimientoCursor();
 
-
+// Para los botones de reproduccion de musica se agrega el metodo que detecta un click sobre cada uno 
+// y se asigna la funcion de play para reproducir y pause para detener
 
 playOn.addEventListener('click',()=> {
     sound1.play();
