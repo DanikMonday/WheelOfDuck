@@ -24,6 +24,7 @@ for (let x = 0; x < (arrayN.length-1); x++) {
 }
 
 
+
 for (let x = 0; x < (dianas.length); x++) {
     dianas[x].addEventListener('click',(e)=>{
         const eliminado = arrayN.splice((0),1)
@@ -35,6 +36,10 @@ for (let x = 0; x < (dianas.length); x++) {
         container.removeChild(dianas[0])
         puntos.innerHTML = 'Puntos: ' + String(score)
         patoeliminado.innerHTML = 'Pato Eliminado: ' + String(eliminado);
+        if (arrayN.length==0) {
+        window.open('./final.html')
+            
+        }
     })
 }
 
